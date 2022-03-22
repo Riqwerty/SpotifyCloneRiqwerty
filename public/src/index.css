@@ -1,0 +1,565 @@
+:root {
+    --white-90: rgba(255,255,255,0.87);
+    }
+    
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        font-family: "Helvetica";
+    }
+    
+    body {
+        overflow-x: hidden;
+    }
+       
+    .main {
+        color: #fff;
+        display: flex;
+        font-family: "GothamBook";
+    }
+
+    h1.title{
+        font-weight: bolder;
+        font-family: Helvetica;
+    }
+    
+    .side-navbar {
+        background-color: #040404;
+        width: 230px;
+        height: 880px;
+        position: fixed;
+    }
+    
+    .main-content {
+        margin-left: 230px;
+        background: linear-gradient(169deg,rgb(48, 12, 114) 0%, rgb(0, 0, 0) 52%);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        width: 88%;
+    }
+    
+    .main-content .top-navbar .top-navbar-container {
+        height: 60px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 22px 0 50px;
+    }
+    
+    .top-navbar .top-navbar-container .navigation-arrows {
+        display: flex;
+    }
+    
+    .top-navbar-container .navigation-arrows svg {
+        width: 22px;
+        height: 22px;
+        margin-right: 20px;
+        color: #888888;
+    }
+    
+    .top-navbar-container .navigation-arrows svg:hover {
+            color: #fff;
+            cursor: pointer;
+    }
+    
+    .top-navbar-container .user {
+        display: flex;
+        align-items: center;
+        padding: 10px;
+        border-radius: 18px;
+    }
+    
+    .top-navbar-container .user:hover {
+        padding: 5px;
+        background-color: #282828;
+        cursor: pointer;
+    }
+    
+    .top-navbar-container .user img {
+        border-radius: 10px;
+        width: 27px;
+        height: 27px;
+        margin-right: 7px;
+    }
+    
+    .username {
+        font-size: 14px;
+        margin-top: 1px;
+        font-family: Helvetica;
+        font-weight: bold;
+    }
+    
+    .main-content .container {
+        padding: 0 32px 0 32px;
+        height: 1100px;
+    }
+    
+    .container .category {
+        padding: 16px 0 16px 0;
+    }
+    
+    .container .category .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 6px;
+        padding-bottom: 28px;
+    }
+    
+    .category .header .title {
+        font-size: 30px;
+        font-weight: bolder;
+    }
+    
+    .category .header .title:hover {
+        text-decoration: underline;
+        cursor: pointer;
+    }
+    
+    .category .header .see-all {
+        text-transform: uppercase;
+        font-family: "Gotham-Bold";
+        font-size: 13px;
+        color: #aaaaaa;
+        margin-right: 20px;
+    }
+    
+    .category .header .see-all:hover {
+        text-decoration: underline;
+        cursor: pointer;
+    }
+    
+    .albuns .albuns-list {
+        display: flex;
+    }
+    
+    .albuns .albuns-list .list-item {
+        background-color: #342a44;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 525px;
+        height: 85px;
+        border-radius: 8px;
+        margin-right: 30px;
+        margin-bottom: 20px;
+    }
+
+    .albuns .albuns-list .list-item1 {
+        background-color: #342a44;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 525px;
+        height: 85px;
+        border-radius: 8px;
+        margin-right: 30px;
+    }
+    .albuns .albuns-list .list-item2 {
+        background-color: #08050c;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 170px;
+        height: 238px;
+        border-radius: 8px;
+        margin-right: 25px;
+    }
+    .albuns .albuns-list .list-item3 {
+        background-color: #08050c;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 170px;
+        height: 238px;
+        border-radius: 8px;
+        margin-right: 25px;
+    }
+    
+    .albuns .albuns-list .list-item:hover {
+        cursor: pointer;
+    }
+
+    .albuns .albuns-list .list-item1:hover {
+        cursor: pointer;
+    }
+
+    .albuns .albuns-list .list-item2:hover {
+        cursor: pointer;
+    }
+
+    .albuns .albuns-list .list-item3:hover {
+        cursor: pointer;
+    }
+    
+    .category .albuns .album-image {
+        width: 83px;
+        height: 85px;
+        border-radius: 8px 0 0  8px;
+        margin-top: 0px;
+        margin-bottom: -50px;
+        margin-right: 450px;
+    }
+
+    .category .albuns .album-image2 {
+        width: 140px;
+        height: 140px;
+        border-radius: 8px;
+        margin-top: 15px;
+        margin-bottom: 20px;
+    }
+    
+    .category .albuns .albun-infos {
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        margin-left: -10px;
+    }
+    
+    .category .albuns .albun-infos2 {
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        margin-left: -10px;
+    }
+    
+    .category .albuns .album-title-love {
+        font-size: 16px;
+        font-weight: bolder;
+        margin-bottom: 10px;
+        margin-right: 180px;
+        font-family: "Helvetica"; 
+    }
+    
+    .category .albuns .album-title-cayenne {
+        font-size: 16px;
+        font-weight: bolder;
+        margin-bottom: 10px;
+        margin-right: 265px;
+        font-family: "Helvetica"; 
+    }
+    .category .albuns .album-title-nostalgiya {
+        font-size: 16px;
+        font-weight: bolder;
+        margin-bottom: 10px;
+        margin-right: 115px;
+        font-family: "Helvetica"; 
+    }
+    .category .albuns .album-title-vospominaniya {
+        font-size: 16px;
+        font-weight: bolder;
+        margin-bottom: 10px;
+        margin-right: 122px;
+        font-family: "Helvetica"; 
+    }
+    .category .albuns .album-title-dorozhnoe {
+        font-size: 16px;
+        font-weight: bolder;
+        margin-bottom: 10px;
+        margin-right: 135px;
+        font-family: "Helvetica"; 
+    }
+
+    .category .albuns .album-title-diskoteka {
+        font-size: 16px;
+        font-weight: bolder;
+        margin-bottom: 10px;
+        margin-right: 170px;
+        font-family: "Helvetica"; 
+    }
+    
+    .category .albuns .album-title2 {
+        font-size: 13px;
+        font-weight: bolder;
+        margin-bottom: 10px;
+        font-family: "Helvetica"; 
+    }
+
+    .category .albuns .album-title3 {
+        font-size: 13px;
+        font-weight: bolder;
+        margin-bottom: 10px;
+        font-family: "Helvetica"; 
+    }
+    
+    .category .albuns .album-creator {
+        font-size: 11px;
+        color: #aaaaaa;
+    }
+    
+    .bottom-navbar {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 90px;
+        background-color: #0f0f11;
+    }
+    
+    .side-navbar {
+        display: flex;
+        flex-direction: column;
+        padding-top: 24px;
+        font-size: 13px;
+        font-weight: bolder;
+        color: #aaaaaa;
+    }
+    
+    .side-navbar .side-navbar-container {
+        padding-left: 24px;
+    }
+    
+    .side-navbar .navbar-logo .spotify-logo {
+        width: 162px;
+        height: 61.5px;
+        padding: 0 0 22px 25px;
+        color: #fff;
+    }
+    
+    .side-navbar .navbar-links .navbar-links-list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 24px;
+    }
+    
+    .side-navbar .navbar-links .navbar-link-item {
+        display: flex;
+        align-items: center;
+        width: 93%;
+        height: 40px;
+        border-radius: 4px;
+        vertical-align: middle;
+        font-family: "Helvetica";
+    }
+    
+    .side-navbar .navbar-links .navbar-link-item:hover {
+        color: #fff;
+        cursor: pointer;
+        transition: 0.4s;
+    }
+    
+    .side-navbar .navbar-links .navbar-link-item:nth-child(1) {
+        background-color: #282828;
+        color: #fff;
+    }
+    
+    .navbar-links .navbar-link-item svg {
+        margin-left: 16px;
+        margin-right: 15px;
+        font-family: "Helvetica";
+    }
+    
+    .navbar-links .navbar-link-item2 svg {
+        margin-left: 16px;
+        margin-right: 15px;
+        font-family: "Helvetica";
+    }
+    
+    .navbar-playlists .playlists-title {
+        text-transform: uppercase;
+        font-size: 12px;
+        color: #aaaaaa;
+        font-weight: bold;
+        margin-bottom: 30px;
+        font-family: "Helvetica";
+    }
+    
+    .navbar-playlists .playlist-item {
+        display: flex;
+        align-items: center;
+        margin-bottom: 12px;
+    }
+    .navbar-playlists .playlist-item:hover {
+        color: #fff;
+        cursor: pointer;
+        transition: 0.4s;
+    }
+    
+    .playlist-item .playlist-item-title {    
+        font-weight: bolder;
+        font-family: "Helvetica";
+    }
+    
+    .navbar-playlists .playlist-icon-plus {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        width: 23px;
+        height: 23px;
+        background-color: #aaaaaa;
+        margin-right: 15px;
+        
+    }
+    
+    .navbar-playlists .playlist-icon-plus .icon-plus {
+        color: #040404;
+        font-size: 23px;
+        font-weight: 500;
+    }
+    
+    .navbar-playlists .playlist-icon-heart {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        width: 23px;
+        height: 23px;    
+        background: linear-gradient(120deg, rgba(73, 17, 255, 0.753) 30%, rgb(209, 209, 209) 100%);
+        margin-right: 15px;
+        
+    }
+    
+    .navbar-separator hr {
+        border-width: 0.3px;
+        border-color: #202020;
+    }
+    
+    .navbar-playlists .playlist-icon-heart .icon-heart {
+        color: #aaaaaa;
+        font-size: 13px;
+        margin-bottom: 3px;
+        font-weight: 500;
+    }
+    
+    .album-list-scroll {
+        overflow: auto;
+        height: 600px;
+    }
+    
+    .album-list .album-playlist-name {
+        font-size: 13px;
+        padding: 9px 0 10px 0;
+        font-family: "Helvetica";
+    }
+    
+    .album-list .album-playlist-name:hover {
+        color: #fff;
+    }
+    
+    .bottom-navbar .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    .container .container-block .music {
+        display: flex;
+        align-items: center;
+        margin: 14px 0 0 14px;
+        font-family: "Helvetica";
+        color: #aaaaaa;
+        font-size: 12px;
+    }
+    
+    .container-block .music .music-image {
+        width: 56px;
+        height: 56px;
+    }
+    
+    .music .actual-music-description {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0 20px 0 10px;
+    }
+    
+    .music .actual-music-description .title {
+        color: #fff;
+        font-size: 14px;
+        margin-bottom: 5px;
+        font-family: "Helvetica";
+    }
+    .music .actual-music-description .title:hover {
+        color: #fff;
+        cursor: pointer;
+        text-decoration: underline;
+    }
+    
+    .music .actual-music-description .artist:hover {
+        color: #fff;
+        cursor: pointer;
+        text-decoration: underline;
+    }
+    
+    .music .icon-heart-empty {
+        margin-right: 10px;
+    }
+    
+    .container-block i:hover {
+        color: #fff;
+    }
+    
+    .container-block .music i {
+        font-size: 16px;
+    }
+    
+    .container-block .buttons {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #aaaaaa;
+        font-size: 20px;
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+    
+    .container-block:nth-child(2) {
+        margin-left: -50px;
+    }
+    
+    .container-block .buttons i {
+        margin: 0 20px 0 20px;
+    }
+    
+    .container-block .buttons .play-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        border: 1px solid #fff;
+        border-radius: 16px;
+        width: 32px;
+        height: 32px;
+    }
+    
+    .progress-bar-container {
+        display: flex;
+        align-items: center;
+        font-family: "Helvetica";
+        color: #aaaaaa;
+        font-size: 12px;
+    }
+    
+    .progress-bar-container .progress-bar {
+        width: 600px;
+        height: 4px;
+        background-color: #505050;
+        margin: 0 10px 0 10px;    
+    }
+    
+    .container-block .volume-wrapper {
+        display: flex;
+        align-items: center;
+        color: #aaaaaa;
+        font-size: 16px;
+        margin: 30px 20px 10px 0;
+    }
+    
+    .volume-wrapper .volume {
+        width: 90px;
+        height: 4px;
+        background-color: #aaaaaa;
+        margin-left: 10px;
+    }
+    
+    ::-webkit-scrollbar {
+        width: 16px;
+    }  
+       
+    ::-webkit-scrollbar-thumb {
+    background: #505050; 
+    }
+     
+    ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+    }
