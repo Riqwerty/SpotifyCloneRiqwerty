@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
     <meta charset="UTF-8">
     <meta name ="viewport" content="width-device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="stylesheet" href="src/index.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
     <title>Spotify Clone Riqwerty</title>
@@ -17,18 +18,18 @@
             </div>
             <div class="navbar-links">
                 <ul class="navbar-links-list">
-                    <li class="navbar-link-item">
+                    <a class="navbar-link-item" href="./index.html">
                       <svg viewBox="0 0 512 512" width="24" height="24" xmlns=""><path d="M448 463.746h-149.333v-149.333h-85.334v149.333h-149.333v-315.428l192-111.746 192 110.984v316.19z" fill="currentColor"></path></svg>
                         <p class="playlist-item-title">Главная</p>
-                    </li>
-                    <li class="navbar-link-item">
+                    </a>
+                    <a class="navbar-link-item" href="./search.html">
                       <svg viewBox="0 0 512 512" width="24" height="24" xmlns=""><path d="M349.714 347.937l93.714 109.969-16.254 13.969-93.969-109.969q-48.508 36.825-109.207 36.825-36.826 0-70.476-14.349t-57.905-38.603-38.603-57.905-14.349-70.476 14.349-70.476 38.603-57.905 57.905-38.603 70.476-14.349 70.476 14.349 57.905 38.603 38.603 57.905 14.349 70.476q0 37.841-14.73 71.619t-40.889 58.921zM224 377.397q43.428 0 80.254-21.461t58.286-58.286 21.461-80.254-21.461-80.254-58.286-58.285-80.254-21.46-80.254 21.46-58.285 58.285-21.46 80.254 21.46 80.254 58.285 58.286 80.254 21.461z" fill="currentColor" fill-rule="evenodd"></path></svg>
                       <p class="playlist-item-title">Поиск</p>
-                    </li>
-                    <li class="navbar-link-item">
+                    </a>
+                    <a class="navbar-link-item" href="./media.html">
                       <svg viewBox="0 0 512 512" width="24" height="24" xmlns=""><path d="M291.301 81.778l166.349 373.587-19.301 8.635-166.349-373.587zM64 463.746v-384h21.334v384h-21.334zM192 463.746v-384h21.334v384h-21.334z" fill="currentColor"></path></svg>
                       <p class="playlist-item-title">Моя медиатека</p>
-                    </li>
+                    </a>
                 </ul>
             </div>
             <div class="side-navbar-container">
@@ -85,7 +86,7 @@
                     </div>
                 </div>
             </nav>
-            <div class="container">
+            <div class="viewpage">
                 <section class="category">
                     <div class="header">
                         <h1 class="title">
@@ -147,8 +148,7 @@
                       </span>
                   </div>
                   <div class="albuns">
-                      <ul class="albuns-list">
-                          
+                      <ul class="albuns-list">                  
                           <li class="list-item2">
                               <img src="https://i.scdn.co/image/ab67656300005f1fb2925170342c343fb511e43e" alt="album" class="album-image2"> 
                               <div class="albun-infos">
@@ -278,18 +278,301 @@
                             </div>
                          </li>
                       </ul>
-                  </div>
-              </section>  
+              </section>
+              <section class="category">
+                <div class="header">
+                    <h3 class="title">
+                        Только для тебя, Riqwerty
+                    </h3>
+                    <span class="see-all">
+                        ВСЕ
+                    </span>
+                </div>
+                <div class="albuns">
+                    <ul class="albuns-list">
+                        <li class="list-item3">
+                           <img src="https://dailymix-images.scdn.co/v2/img/ab6761610000e5eb3bfbe97fa2ba85a2d922e4a2/1/ru/default" alt="album" class="album-image2"> 
+                           <div class="albun-infos">
+                               <span class="album-title2">Микс дня #1</span>
+                               <p class="album-creator">MACAN, Big Baby Tape...</p>
+                           </div>
+                        </li>
+                        <li class="list-item3">
+                          <img src="https://dailymix-images.scdn.co/v2/img/ab6761610000e5eb93c91cbb68d78d911b3d6070/2/ru/default" alt="album" class="album-image2"> 
+                          <div class="albun-infos">
+                              <span class="album-title2">Микс дня #2</span>
+                              <p class="album-creator">Elvira T, Nyusha...</p>
+                          </div>
+                       </li>
+                       <li class="list-item3">
+                          <img src="https://dailymix-images.scdn.co/v2/img/ab6761610000e5eb77bf00f67e21f514dc44c485/3/ru/default" alt="album" class="album-image2"> 
+                          <div class="albun-infos">
+                              <span class="album-title2">Микс дня #3</span>
+                              <p class="album-creator">OneRepublic, Aur...</p>
+                          </div>
+                       </li>
+                       <li class="list-item3">
+                          <img src="https://dailymix-images.scdn.co/v2/img/ab6761610000e5eb083627f7d306f40cd7ff8893/4/ru/default" alt="album" class="album-image2"> 
+                          <div class="albun-infos">
+                              <span class="album-title2">Микс дня #4</span>
+                              <p class="album-creator">Bullet For My Valen...</p>
+                          </div>
+                       </li>
+                       <li class="list-item3">
+                          <img src="https://dailymix-images.scdn.co/v2/img/6f0da41419b31d9d2ba55d2df212f59ad0668118/5/ru/default" alt="album" class="album-image2"> 
+                          <div class="albun-infos">
+                              <span class="album-title2">Микс дня #5</span>
+                              <p class="album-creator">Post Malone,50 Cent...</p>
+                          </div>
+                       </li>
+                       <li class="list-item3">
+                          <img src="https://dailymix-images.scdn.co/v2/img/ab6761610000e5eb749ba770a33230206f8fe159/6/ru/default" alt="album" class="album-image2"> 
+                          <div class="albun-infos">
+                              <span class="album-title2">Микс дня #6</span>
+                              <p class="album-creator">Lady Gaga, Es Sheer...</p>
+                          </div>
+                       </li>
+                       <li class="list-item3">
+                          <img src="https://newjams-images.scdn.co/image/ab676477000033ad/dt/v3/discover-weekly/XLzHauxW-TvNGUpoVcMX_Q4ja-EU0JBPhu1Bq_hXqtd9WYWB6GkWFQAezVuCIo_yoCNo0rLqWgSmLuYqmczNfE46IQ-CE6RxUbTSj6gb_b4=/NTQ6NTE6MjJUMDMtMzAtMg==" alt="album" class="album-image2"> 
+                          <div class="albun-infos">
+                              <span class="album-title2">Открытия недели</span>
+                              <p class="album-creator">Новые треки и редкие ко...</p>
+                          </div>
+                       </li>
+                       <li class="list-item3">
+                          <img src="https://newjams-images.scdn.co/v3/release-radar/ab6761610000e5eb740f94ce25419fe7045236bb/ru/default" alt="album" class="album-image2"> 
+                          <div class="albun-infos">
+                              <span class="album-title2">Радар новинок</span>
+                              <p class="album-creator">Свежая музыка от люб...</p>
+                          </div>
+                       </li>
+                          </div>
+                       </li>
+                    </ul>
+            </section>
+            <section class="category">
+                <div class="header">
+                    <h3 class="title">
+                        Только для тебя, Riqwerty
+                    </h3>
+                    <span class="see-all">
+                        ВСЕ
+                    </span>
+                </div>
+                <div class="albuns">
+                    <ul class="albuns-list">
+                        <li class="list-item3">
+                           <img src="https://dailymix-images.scdn.co/v2/img/ab6761610000e5eb3bfbe97fa2ba85a2d922e4a2/1/ru/default" alt="album" class="album-image2"> 
+                           <div class="albun-infos">
+                               <span class="album-title2">Микс дня #1</span>
+                               <p class="album-creator">MACAN, Big Baby Tape...</p>
+                           </div>
+                        </li>
+                        <li class="list-item3">
+                          <img src="https://dailymix-images.scdn.co/v2/img/ab6761610000e5eb93c91cbb68d78d911b3d6070/2/ru/default" alt="album" class="album-image2"> 
+                          <div class="albun-infos">
+                              <span class="album-title2">Микс дня #2</span>
+                              <p class="album-creator">Elvira T, Nyusha...</p>
+                          </div>
+                       </li>
+                       <li class="list-item3">
+                          <img src="https://dailymix-images.scdn.co/v2/img/ab6761610000e5eb77bf00f67e21f514dc44c485/3/ru/default" alt="album" class="album-image2"> 
+                          <div class="albun-infos">
+                              <span class="album-title2">Микс дня #3</span>
+                              <p class="album-creator">OneRepublic, Aur...</p>
+                          </div>
+                       </li>
+                       <li class="list-item3">
+                          <img src="https://dailymix-images.scdn.co/v2/img/ab6761610000e5eb083627f7d306f40cd7ff8893/4/ru/default" alt="album" class="album-image2"> 
+                          <div class="albun-infos">
+                              <span class="album-title2">Микс дня #4</span>
+                              <p class="album-creator">Bullet For My Valen...</p>
+                          </div>
+                       </li>
+                       <li class="list-item3">
+                          <img src="https://dailymix-images.scdn.co/v2/img/6f0da41419b31d9d2ba55d2df212f59ad0668118/5/ru/default" alt="album" class="album-image2"> 
+                          <div class="albun-infos">
+                              <span class="album-title2">Микс дня #5</span>
+                              <p class="album-creator">Post Malone,50 Cent...</p>
+                          </div>
+                       </li>
+                       <li class="list-item3">
+                          <img src="https://dailymix-images.scdn.co/v2/img/ab6761610000e5eb749ba770a33230206f8fe159/6/ru/default" alt="album" class="album-image2"> 
+                          <div class="albun-infos">
+                              <span class="album-title2">Микс дня #6</span>
+                              <p class="album-creator">Lady Gaga, Es Sheer...</p>
+                          </div>
+                       </li>
+                       <li class="list-item3">
+                          <img src="https://newjams-images.scdn.co/image/ab676477000033ad/dt/v3/discover-weekly/XLzHauxW-TvNGUpoVcMX_Q4ja-EU0JBPhu1Bq_hXqtd9WYWB6GkWFQAezVuCIo_yoCNo0rLqWgSmLuYqmczNfE46IQ-CE6RxUbTSj6gb_b4=/NTQ6NTE6MjJUMDMtMzAtMg==" alt="album" class="album-image2"> 
+                          <div class="albun-infos">
+                              <span class="album-title2">Открытия недели</span>
+                              <p class="album-creator">Новые треки и редкие ко...</p>
+                          </div>
+                       </li>
+                       <li class="list-item3">
+                          <img src="https://newjams-images.scdn.co/v3/release-radar/ab6761610000e5eb740f94ce25419fe7045236bb/ru/default" alt="album" class="album-image2"> 
+                          <div class="albun-infos">
+                              <span class="album-title2">Радар новинок</span>
+                              <p class="album-creator">Свежая музыка от люб...</p>
+                          </div>
+                       </li>
+                          </div>
+                       </li>
+                    </ul>
+            </section>
+            <section class="category">
+                <div class="header">
+                    <h3 class="title">
+                        Только для тебя, Riqwerty
+                    </h3>
+                    <span class="see-all">
+                        ВСЕ
+                    </span>
+                </div>
+                <div class="albuns">
+                    <ul class="albuns-list">
+                        <li class="list-item3">
+                           <img src="https://dailymix-images.scdn.co/v2/img/ab6761610000e5eb3bfbe97fa2ba85a2d922e4a2/1/ru/default" alt="album" class="album-image2"> 
+                           <div class="albun-infos">
+                               <span class="album-title2">Микс дня #1</span>
+                               <p class="album-creator">MACAN, Big Baby Tape...</p>
+                           </div>
+                        </li>
+                        <li class="list-item3">
+                          <img src="https://dailymix-images.scdn.co/v2/img/ab6761610000e5eb93c91cbb68d78d911b3d6070/2/ru/default" alt="album" class="album-image2"> 
+                          <div class="albun-infos">
+                              <span class="album-title2">Микс дня #2</span>
+                              <p class="album-creator">Elvira T, Nyusha...</p>
+                          </div>
+                       </li>
+                       <li class="list-item3">
+                          <img src="https://dailymix-images.scdn.co/v2/img/ab6761610000e5eb77bf00f67e21f514dc44c485/3/ru/default" alt="album" class="album-image2"> 
+                          <div class="albun-infos">
+                              <span class="album-title2">Микс дня #3</span>
+                              <p class="album-creator">OneRepublic, Aur...</p>
+                          </div>
+                       </li>
+                       <li class="list-item3">
+                          <img src="https://dailymix-images.scdn.co/v2/img/ab6761610000e5eb083627f7d306f40cd7ff8893/4/ru/default" alt="album" class="album-image2"> 
+                          <div class="albun-infos">
+                              <span class="album-title2">Микс дня #4</span>
+                              <p class="album-creator">Bullet For My Valen...</p>
+                          </div>
+                       </li>
+                       <li class="list-item3">
+                          <img src="https://dailymix-images.scdn.co/v2/img/6f0da41419b31d9d2ba55d2df212f59ad0668118/5/ru/default" alt="album" class="album-image2"> 
+                          <div class="albun-infos">
+                              <span class="album-title2">Микс дня #5</span>
+                              <p class="album-creator">Post Malone,50 Cent...</p>
+                          </div>
+                       </li>
+                       <li class="list-item3">
+                          <img src="https://dailymix-images.scdn.co/v2/img/ab6761610000e5eb749ba770a33230206f8fe159/6/ru/default" alt="album" class="album-image2"> 
+                          <div class="albun-infos">
+                              <span class="album-title2">Микс дня #6</span>
+                              <p class="album-creator">Lady Gaga, Es Sheer...</p>
+                          </div>
+                       </li>
+                       <li class="list-item3">
+                          <img src="https://newjams-images.scdn.co/image/ab676477000033ad/dt/v3/discover-weekly/XLzHauxW-TvNGUpoVcMX_Q4ja-EU0JBPhu1Bq_hXqtd9WYWB6GkWFQAezVuCIo_yoCNo0rLqWgSmLuYqmczNfE46IQ-CE6RxUbTSj6gb_b4=/NTQ6NTE6MjJUMDMtMzAtMg==" alt="album" class="album-image2"> 
+                          <div class="albun-infos">
+                              <span class="album-title2">Открытия недели</span>
+                              <p class="album-creator">Новые треки и редкие ко...</p>
+                          </div>
+                       </li>
+                       <li class="list-item3">
+                          <img src="https://newjams-images.scdn.co/v3/release-radar/ab6761610000e5eb740f94ce25419fe7045236bb/ru/default" alt="album" class="album-image2"> 
+                          <div class="albun-infos">
+                              <span class="album-title2">Радар новинок</span>
+                              <p class="album-creator">Свежая музыка от люб...</p>
+                          </div>
+                       </li>
+                          </div>
+                       </li>
+                    </ul>
+            </section>
+            <section class="category">
+                <div class="header">
+                    <h3 class="title">
+                        Только для тебя, Riqwerty
+                    </h3>
+                    <span class="see-all">
+                        ВСЕ
+                    </span>
+                </div>
+                <div class="albuns">
+                    <ul class="albuns-list">
+                        <li class="list-item3">
+                           <img src="https://dailymix-images.scdn.co/v2/img/ab6761610000e5eb3bfbe97fa2ba85a2d922e4a2/1/ru/default" alt="album" class="album-image2"> 
+                           <div class="albun-infos">
+                               <span class="album-title2">Микс дня #1</span>
+                               <p class="album-creator">MACAN, Big Baby Tape...</p>
+                           </div>
+                        </li>
+                        <li class="list-item3">
+                          <img src="https://dailymix-images.scdn.co/v2/img/ab6761610000e5eb93c91cbb68d78d911b3d6070/2/ru/default" alt="album" class="album-image2"> 
+                          <div class="albun-infos">
+                              <span class="album-title2">Микс дня #2</span>
+                              <p class="album-creator">Elvira T, Nyusha...</p>
+                          </div>
+                       </li>
+                       <li class="list-item3">
+                          <img src="https://dailymix-images.scdn.co/v2/img/ab6761610000e5eb77bf00f67e21f514dc44c485/3/ru/default" alt="album" class="album-image2"> 
+                          <div class="albun-infos">
+                              <span class="album-title2">Микс дня #3</span>
+                              <p class="album-creator">OneRepublic, Aur...</p>
+                          </div>
+                       </li>
+                       <li class="list-item3">
+                          <img src="https://dailymix-images.scdn.co/v2/img/ab6761610000e5eb083627f7d306f40cd7ff8893/4/ru/default" alt="album" class="album-image2"> 
+                          <div class="albun-infos">
+                              <span class="album-title2">Микс дня #4</span>
+                              <p class="album-creator">Bullet For My Valen...</p>
+                          </div>
+                       </li>
+                       <li class="list-item3">
+                          <img src="https://dailymix-images.scdn.co/v2/img/6f0da41419b31d9d2ba55d2df212f59ad0668118/5/ru/default" alt="album" class="album-image2"> 
+                          <div class="albun-infos">
+                              <span class="album-title2">Микс дня #5</span>
+                              <p class="album-creator">Post Malone,50 Cent...</p>
+                          </div>
+                       </li>
+                       <li class="list-item3">
+                          <img src="https://dailymix-images.scdn.co/v2/img/ab6761610000e5eb749ba770a33230206f8fe159/6/ru/default" alt="album" class="album-image2"> 
+                          <div class="albun-infos">
+                              <span class="album-title2">Микс дня #6</span>
+                              <p class="album-creator">Lady Gaga, Es Sheer...</p>
+                          </div>
+                       </li>
+                       <li class="list-item3">
+                          <img src="https://newjams-images.scdn.co/image/ab676477000033ad/dt/v3/discover-weekly/XLzHauxW-TvNGUpoVcMX_Q4ja-EU0JBPhu1Bq_hXqtd9WYWB6GkWFQAezVuCIo_yoCNo0rLqWgSmLuYqmczNfE46IQ-CE6RxUbTSj6gb_b4=/NTQ6NTE6MjJUMDMtMzAtMg==" alt="album" class="album-image2"> 
+                          <div class="albun-infos">
+                              <span class="album-title2">Открытия недели</span>
+                              <p class="album-creator">Новые треки и редкие ко...</p>
+                          </div>
+                       </li>
+                       <li class="list-item3">
+                          <img src="https://newjams-images.scdn.co/v3/release-radar/ab6761610000e5eb740f94ce25419fe7045236bb/ru/default" alt="album" class="album-image2"> 
+                          <div class="albun-infos">
+                              <span class="album-title2">Радар новинок</span>
+                              <p class="album-creator">Свежая музыка от люб...</p>
+                          </div>
+                       </li>
+                          </div>
+                       </li>
+                    </ul>
+                </div>
+            </section>    
             </div>
           </div>
-      </div>
       <nav class="bottom-navbar">
           <div class="container">
               <div class="container-block">
                   <div class="music">
                       <img src="https://i.scdn.co/image/ab67616d00004851128b948ac9a26c14269282d4" alt="Actual Music" class="music-image">
                       <div class="actual-music-description">
-                          <p class="title">Castle Walls</p>
+                          <p class="title-music-description">Castle Walls</p>
                           <p class="artist">T.I. Cristina Aguilera</p>
                       </div>
                       <i class="far fa-heart"></i>
@@ -299,11 +582,9 @@
                   <div class="buttons">
                     <i class="fas fa-random"></i>
                     <i class="fas fa-step-backward"></i>
-                      <div class="play-wrapper">
-                        <i class="play-pause fas fa-play"></i>
-                      </div>
-                      <i class="fas fa-step-forward"></i>
-                      <i class="fas fa-undo-alt"></i>
+                    <i class="play-pause fas fa-play"></i>
+                    <i class="fas fa-step-forward"></i>
+                    <i class="fas fa-undo-alt"></i>
                   </div>
                   <div class="progress-bar-container">
                       <p>0:00</p>
