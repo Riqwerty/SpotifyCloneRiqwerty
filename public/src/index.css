@@ -1,4 +1,4 @@
-    :root {
+        :root {
         --white-90: rgba(255,255,255,0.87);
         background-size: cover; 
         -moz-background-size: cover; 
@@ -38,7 +38,6 @@
     sub {
     bottom: -0.25em;
     }
-
     sup {
     top: -0.5em;
     }   
@@ -109,9 +108,10 @@
         height: 22px;
         margin-right: 20px;
         color: #888888;
+        cursor: pointer;
     }
     
-    .navigation-arrows svg:hover {
+    .hover {
             color: #fff;
             cursor: pointer;
     }
@@ -119,14 +119,10 @@
     .user {
         display: flex;
         align-items: center;
-        padding: 10px;
+        padding: 3px;
         border-radius: 18px;
-    }
-    
-    .user:hover {
-        padding: 5px;
-        background-color: #282828;
         cursor: pointer;
+        background-color: #141414;
     }
     
     .user img {
@@ -158,10 +154,6 @@
     .title {
         font-size: 30px;
         font-weight: bolder;
-    }
-    
-    .title:hover {
-        text-decoration: underline;
         cursor: pointer;
     }
     
@@ -172,10 +164,6 @@
         color: #aaaaaa;
         margin-right: 20px;
         flex-wrap: nowrap;
-    }
-    
-    .see-all:hover {
-        text-decoration: underline;
         cursor: pointer;
     }
     
@@ -200,7 +188,8 @@
         margin-right: 15px;
         margin-bottom: 20px;
         max-width: 500px;
-        max-height: 85px;      
+        max-height: 85px;
+        cursor: pointer;      
     }
 
     .list-item1 {
@@ -216,6 +205,7 @@
         margin-bottom: 20px;
         max-width: 500px;
         max-height: 85px;
+        cursor: pointer; 
     }
     .list-item2 {
         background-color: #08050c;
@@ -229,6 +219,7 @@
         margin-bottom: 20px;
         max-width: 170px;
         max-height: 238px;
+        cursor: pointer; 
     }
     .list-item3 {
         background-color: #08050c;
@@ -242,22 +233,7 @@
         margin-bottom: 20px;
         max-width: 170px;
         max-height: 238px;
-    }
-    
-    .list-item:hover {
-        cursor: pointer;
-    }
-
-    .list-item1:hover {
-        cursor: pointer;
-    }
-
-    .list-item2:hover {
-        cursor: pointer;
-    }
-
-    .list-item3:hover {
-        cursor: pointer;
+        cursor: pointer; 
     }
     
     .album-image {
@@ -384,12 +360,8 @@
         vertical-align: middle;
         font-family: "Helvetica";
         text-decoration: none;
-    }
-    
-    .navbar-link-item:hover {
         color: #fff;
         cursor: pointer;
-        transition: 0.4s;
     }
     
     .navbar-link-item:nth-child(1) {
@@ -425,11 +397,7 @@
         margin-bottom: 12px;
         font-weight: bolder;
         font-family: "Helvetica";
-    }
-    .playlist-item:hover {
-        color: #fff;
         cursor: pointer;
-        transition: 0.4s;
     }
     
     .playlist-icon-plus {
@@ -482,10 +450,7 @@
         padding: 9px 0 10px 0;
         font-family: "Helvetica";
         cursor: pointer;
-    }
-    
-    .album-playlist-name:hover {
-        color: #fff;
+        color: #aaaaaa;
     }
     
     .bottom-navbar {
@@ -529,25 +494,16 @@
         font-size: 14px;
         margin-bottom: 5px;
         font-family: "Helvetica";
-    }
-    .title-music-description:hover {
-        color: #fff;
         cursor: pointer;
-        text-decoration: underline;
     }
     
-    .artist:hover {
-        color: #fff;
+    .artist {
+        color: #aaaaaa;
         cursor: pointer;
-        text-decoration: underline;
     }
     
     .icon-heart-empty {
         margin-right: 10px;
-    }
-    
-    i:hover {
-        color: #fff;
     }
     
     .music i {
@@ -644,12 +600,7 @@
         vertical-align: middle;
         font-family: "Helvetica";
         text-decoration: none;
-    }
-    
-    .navbar-link-item-search:hover {
-        color: #fff;
         cursor: pointer;
-        transition: 0.4s;
     }
 
     .navbar-link-item-search:nth-child(2) {
@@ -696,12 +647,7 @@
         vertical-align: middle;
         font-family: "Helvetica";
         text-decoration: none;
-    }
-    
-    .navbar-link-item-media:hover {
-        color: #fff;
         cursor: pointer;
-        transition: 0.4s;
     }
 
     .navbar-link-item-media:nth-child(3) {
