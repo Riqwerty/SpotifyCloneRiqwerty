@@ -1,0 +1,63 @@
+.song {
+    display: grid;
+    grid-template-rows: 50px;
+    grid-template-columns: 30px 4fr 3fr 1fr;
+    gap: 10px;
+    background-color: inherit;
+    border-radius: 10px;
+    padding: 0 20px;
+    cursor: pointer;
+    &:hover {
+        background-color: #342a44;
+    }
+}
+.isChooseSong {
+    display: grid;
+    grid-template-rows: 50px;
+    grid-template-columns: 30px 4fr 3fr 1fr;
+    gap: 10px;
+    background-color:#342a44;
+    border-radius: 10px;
+    padding: 0 20px;
+    cursor: pointer;
+}
+.box {
+    width: 100%;
+    justify-self: start;
+    align-self: center;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    overflow: hidden;
+    &__text {
+        font-size: 16px;
+        font-weight: 600;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+    &__album {
+        font-size: 16px;
+        font-weight: 600;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+    &__img {
+        height: 40px;
+    }
+    &__title {
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+    &__authors {
+        display: flex;
+        gap: 10px;
+        &__author {
+            font-weight: 500;
+        }
+    }
+}

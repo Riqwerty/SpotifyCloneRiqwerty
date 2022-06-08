@@ -1,0 +1,45 @@
+.playlist {
+    display: flex;
+    flex-direction: column;
+    gap: 30px
+}
+.playlistTitle {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 50px;
+    &__boxImg {
+        max-width: 300px;
+        max-height: 300px;
+        &__img {
+            height: 300px
+        }
+    }
+    &__boxText {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        gap: 20px;
+        &__text {
+            font-size: 42px;
+            font-weight: 700;
+        }
+    }
+}
+.boxImg {
+    height: 300px;
+    width: 300px;
+    &__container {
+        padding-bottom: 100%;
+        position: relative;
+        &__img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+        }
+    }
+    
+}

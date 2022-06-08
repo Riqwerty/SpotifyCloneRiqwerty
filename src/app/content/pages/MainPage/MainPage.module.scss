@@ -1,0 +1,11 @@
+.mainPage {
+    display: flex;
+    flex-direction: column;
+    gap: 30px
+}
+.headline {
+    margin: 0;
+    cursor: default;
+    font-size: 32px;
+    font-weight: 700;
+}

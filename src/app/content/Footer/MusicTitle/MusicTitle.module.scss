@@ -1,0 +1,37 @@
+.musicTitle {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    width: 250px;
+    height: 60px;
+    &__img {
+        height: 100%;
+    }
+    &__box {
+        display: flex;
+        gap: 10px;
+        flex-direction: column;
+        justify-content: center;
+        width: 240px;
+        overflow: hidden;
+        &__text {
+            font-size: 14px;
+            font-weight: 600;
+            cursor: default;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+    }
+}
+.box__authors {
+    display: flex;
+    gap: 10px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    &__text {
+        font-size: 12px;
+        font-weight: 400;
+    }
+}

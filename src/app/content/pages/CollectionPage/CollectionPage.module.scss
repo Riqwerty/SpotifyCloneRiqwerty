@@ -1,0 +1,11 @@
+.headline {
+    cursor: default;
+    font-size: 32px;
+    font-weight: 700;
+}
+.containerWrap {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 24px;
+}

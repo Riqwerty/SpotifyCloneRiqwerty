@@ -1,0 +1,28 @@
+.containerLink {
+    display: flex;
+    &:hover {
+        background-color: rgba(255, 255, 255, .2);;
+        border-radius: 4px;
+    }
+}
+
+.link {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin: 0px 10px 0px 20px;
+    z-index: 50;
+    height: 40px;
+}
+
+.img {
+    height: 30px;
+    width: 15px;
+}
+
+.text {
+    font-size: 12px;
+    font-weight: 550;
+    text-decoration: none;
+}

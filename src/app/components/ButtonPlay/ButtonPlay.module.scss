@@ -1,0 +1,34 @@
+.pause {
+    position: relative;
+    background: none;
+    border: 0px;
+    &:before, &:after {
+        transition: 0.3s;
+        content: "";
+        position: absolute;
+        top: 0;
+        height: 100%;
+        width: 33%;
+        background: #aaaaaa;
+    }
+    &:before {
+        left: 0;
+    }
+    &:after {
+        right: 0;
+    }
+}
+.play {
+    border-style: solid;
+    border-top-color: transparent;
+    border-bottom-color: transparent;
+    border-left-color: #aaaaaa;
+    border-right: none;
+}
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-color: #aaaaaa;
+    background-color: inherit;
+}
