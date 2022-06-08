@@ -1,0 +1,56 @@
+.header {
+    position: fixed;
+    left: 230px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    height: 60px;
+}
+.button {
+    background-color: inherit;
+    height: 30px;
+    width: 30px;
+    border: 0px;
+    position: relative;
+}
+.history {
+    display: flex;
+    gap: 5px;
+}
+.buttonBack {
+    &:after {
+        position: absolute;
+        top: 5px;;
+        left: 7px;
+        content: '';
+        display: block;
+        width: 12px;
+        height: 12px;
+        border-left-width: 1px;
+        border-left-color: white;
+        border-left-style: solid;
+        border-bottom-width: 1px;
+        border-bottom-color: white;
+        border-bottom-style: solid;
+        transform: rotate(45deg);
+    }
+}
+.buttonForward {
+    &:after {
+        position: absolute;
+        top: 5px;;
+        right: 7px;
+        content: '';
+        display: block;
+        width: 12px;
+        height: 12px;
+        border-left-width: 1px;
+        border-left-color: white;
+        border-left-style: solid;
+        border-bottom-width: 1px;
+        border-bottom-color: white;
+        border-bottom-style: solid;
+        transform: rotate(-135deg);
+    }
+}

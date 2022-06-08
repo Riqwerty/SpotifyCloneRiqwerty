@@ -1,0 +1,23 @@
+.sound {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 15px;
+    width: 300px;
+    opacity: 0.7;
+}
+.button {
+    padding: 0;
+    border: none;
+    background-color: inherit;
+    border-color: #aaaaaa;
+    &__img {
+        height: 19px;
+    }
+    &:active {
+        .button__img {
+            opacity: 0.7;
+            height: 27px;
+        }
+    }
+}

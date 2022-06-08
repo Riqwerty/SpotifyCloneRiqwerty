@@ -1,0 +1,15 @@
+.button {
+    background-color: inherit;
+    border: none;
+    height: 20px;
+    width: 30px;
+    opacity: 0.7;
+    &__img {
+        height: 20px;
+    }
+    &:active {
+        .button__img {
+            height: 17px;
+        }
+    }
+}

@@ -1,0 +1,39 @@
+.artist {
+    display: flex;
+    flex-direction: column;
+    gap: 30px
+}
+.artistTitle {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 50px;
+    margin-bottom: 30px;
+    &__boxText {
+        display: flex;
+        align-items: center;
+        &__name {
+            text-align: center;
+            font-size: 48px;
+            font-weight: 600;
+            cursor: default;
+        }
+    }
+}
+.boxImg {
+    height: 400px;
+    width: 400px;
+    &__container {
+        width: 100%;
+        padding-bottom: 100%;
+        position: relative;
+        &__img {
+            border-radius: 500px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+        }
+    }
+}

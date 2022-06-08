@@ -1,0 +1,41 @@
+.release {
+    border-radius: 15px;
+    background-color: #08050c;
+    &__link {
+        padding: 15px;
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+    &__boxImg {
+        width: 100%;
+        padding-bottom: 100%;
+        position: relative;
+        &__img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+        }
+    }
+    &__boxText {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        &__text {
+            font-size: 16px;
+            font-weight: 600;
+            width: 100%;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+    }
+    &:hover {
+        background-color: #150e1f;
+    }
+}

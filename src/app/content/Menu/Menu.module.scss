@@ -1,0 +1,20 @@
+.aside {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    grid-column: 1/2;
+    background-color: #040404;  
+}
+
+.containerLink {
+    display: flex;
+}
+
+.logo {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 22px 26px;
+    z-index: 50;
+}

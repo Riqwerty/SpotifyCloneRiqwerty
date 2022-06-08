@@ -1,0 +1,22 @@
+.playlist {
+    &__header {
+        display: grid;
+        grid-template-rows: 50px;
+        grid-template-columns: 16px 4fr 3fr 1fr;
+        gap: 10px;
+        padding: 0 20px;
+        border-bottom: rgba(127, 127, 127, 0.5) 2px solid;
+        opacity: 0.6;
+        &__box {
+            justify-self: start;
+            align-self: center;
+            &__text {
+                font-size: 16px;
+                font-weight: 600;
+            }
+            &__img {
+                height: 30px;
+            }
+        }
+    }
+}
